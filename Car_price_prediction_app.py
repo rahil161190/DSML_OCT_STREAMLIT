@@ -2,6 +2,8 @@ import pandas as pd
 import streamlit as st
 import pickle
 # we always have to import pickle in order to run the model, #car pred is a pickle file
+# we have to encode everytime run the model for streamlit and encoding can be done manually in the code (shown below)
+# or we can paste data frame of encoded colume also
 cars_df = pd.read_csv('cars24-car-price.csv')
 st.write("""
 # Car Price Prediction App """)
